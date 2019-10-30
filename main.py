@@ -54,7 +54,7 @@ def download_files(msg):
 @itchat.msg_register(FRIENDS)
 def add_friend(msg):
     msg.user.verify()
-    msg.user.send('你好! 向我发送表情包吧, 我会把原图发送给你!')
+    msg.user.send('你好哇！向我发送表情包试试吧～')
 
 
 if __name__ == "__main__":
