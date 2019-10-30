@@ -1,0 +1,12 @@
+version: '3'
+services:
+  main:
+    restart: "on-failure"
+    build: .
+    links:
+      - redis
+    environment:
+      - REDIS_HOST=redis
+  redis:
+    restart: always
+    image: "redis:alpine"
